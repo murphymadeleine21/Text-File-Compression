@@ -26,7 +26,7 @@ bool getInt(istream& inf, int& n);
 void createDiff(istream& fold, istream& fnew, ostream& fdiff)
 {
     
-    if (!fold)          //is this necessary?
+    if (!fold)          
         return;
     
     char s;
@@ -236,10 +236,7 @@ bool applyDiff(istream& fold, istream& fdiff, ostream& fnew)
                     i++;
                 i--; //for when we hit next character
 
-//
-//            if (offset >= oldfile.size())       //cannot copy from an offset past the end
-//                return false;
-//
+
 
                 for (int r = offset; r - offset < length; r++)
                 {
