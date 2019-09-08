@@ -76,11 +76,3 @@ unsigned int HashTable::hashFunc(const string& hashMe)
     return bucketNum;
 }
 
-
-//Not necessary ??
-//HashTable::~HashTable()
-//{
-//    for (int i = 0; i < NUMBUCKETS; i++)
-//        Buckets[i].clear();             //clear every list in each bucket
-//}
-
